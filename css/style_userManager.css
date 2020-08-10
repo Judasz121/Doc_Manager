@@ -1,0 +1,14 @@
+.addUserButtonRow td center .icon-user-plus{
+	font-size: 30px;
+	cursor: pointer;
+}
+.userEditTable thead tr td{
+	text-align: center;
+}
+button[type=submit]{
+	position: fixed;
+	margin-left:20px;
+}
+tr.newRow td input, table.userEditTable tbody tr td input{
+	width:160px;
+}

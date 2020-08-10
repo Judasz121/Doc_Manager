@@ -1,0 +1,165 @@
+body{
+	color:#171717;
+	background-image: url("IMGs/dark_geometric_@2X.png");
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 13px;
+	line-height: 1.3;
+}
+label{display: block;}
+
+input[type=text], input[type=date], input[type=number],input[type=datetime-local] , select{
+	text-align: center;
+    font-size: 15px;
+    background: inherit;
+    color: #171717;
+    border: none;
+    border-bottom: 1px dashed #171717;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+     display: none;
+    -webkit-appearance: none;
+}
+h1{
+	font-size:35px;
+	margin:0px;
+}
+a{
+	font-family:Verdana;
+	text-decoration: none;
+	color:#171717;
+}
+.hidden{display:none;}
+p{
+	margin-block-start: 2px;
+    margin-block-end: 2px;
+    margin: 2px;
+}
+a:visited{
+	text-decoration: none;
+}
+.button{
+	background-color:#3F3F3F;
+	color:#cacaca;
+	border-color:#171717;
+	margin-top:5px;
+	margin-right:5px;
+	border-radius: 5px;
+	cursor:pointer;
+	font-size:12px;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+.button:hover{
+	color:#2C2C2C;
+}
+.logout{
+	margin-left:5px;
+	float:right;
+}
+.navButtons{
+	position:absolute;
+	right:10px;
+}
+
+i::before{
+	padding: 2px;
+    margin: 2px;
+}
+
+.clientDocList.container{
+	border: 1px solid black !important;
+	background: #D2D2D2;
+	float:right;
+	margin-top:100px;
+    position: static;
+	margin-right:25px;
+	padding: 5px;
+}
+table.clientDocList{
+	padding: 5px;
+	
+}
+table.userDocList{
+	border: 1px solid black !important;
+	background: #D2D2D2;
+	float:right;
+	margin-top:100px;
+    position: static;
+	margin-right:25px;
+	padding: 5px;
+	
+}
+table.userDocList tbody tr td, table.clientDocList tbody tr td{
+	border: 1px solid #AAAAAA;
+	text-align:center;
+	padding: 5px;
+}
+.numOfDocsPerClient{
+	border: 1px solid #AAAAAA;
+	padding: 5px;
+}
+.numOfDocsPerClient span input{
+	width:30px;
+	padding: 5px;
+}
+
+
+
+.doc.filter{
+    background: #D2D2D2;
+    display: table;
+    border: 2px solid #2d2d2d;
+    padding: 10px;
+	float:left;
+}
+.doc.filter div{
+	float:none;
+}
+.doc.filter div select{
+	   background: #D2D2D2;
+}
+	
+	
+	
+	
+.docList{
+	float:left;
+}
+.doc.info{display:table-row; background: #D2D2D2;}
+.doc.item div span{display:none;}
+.doc.item{
+	display:table-row;
+	background:#D2D2D2;
+	color:black;
+}
+.doc.item div input, .doc.item div select{color:black;}
+.doc.item div, .doc.info div{
+	display: table-cell;
+    border: 1px solid #AAAAAA;
+    border-bottom: 0px dashed #000;
+    background: inherit;
+    text-align: center;
+    padding: 4px;
+}
+.doc.item .dateModified span br{display:none;}
+.clientNum input{
+	width:50px;
+}
+.clientName input, .clientSurname input{
+	width:120px;
+}
+.docImportance label{
+	float:left;
+}
+.docImportance label span, .dateModified span{
+	display:inline !important;
+}
+
+.yellow{background: yellow !important;}
+
+.orange{background: orange !important;}
+
+.blue{background: rgb(51, 153, 204) !important;}
+
+
+.green{background: rgb(51, 204, 102) !important;}

@@ -1,0 +1,188 @@
+
+
+.groupWorkersTable{
+	text-align: center;
+}
+
+.groupWorkersTable td, .groupWorkersTable th{
+	border: 1px solid black;
+}
+
+#workersTablePopup{
+	transition: transform 0.75s ease;
+	will-change: transform;
+	transform: translateX(-120vw);
+	position: absolute;
+    left: 2vw;
+	background: #AAAAAA;
+	padding: 10px;
+    border-radius: 10px;
+	z-index: 1;
+	text-align:center;
+}
+#workersTablePopup.active{
+	transform: translateX(0%) ;
+}
+.workerDocsTable{
+	float: left;
+	font-size: 0.7em;
+}
+.workerTableSortLink{
+	cursor: pointer;
+	user-select: none;
+}
+#workersTableCloseButton{
+	display: table;
+    font-size: 40px;
+    position: absolute;
+    left: 99%;
+    top: -13px;
+	cursor:pointer;
+}
+
+.workersTableOpenersContainer{
+    position: relative;
+    top: 52px;
+    left: 10px;
+	display:table;
+}
+
+#workerDocTypesTable{
+	position: absolute;
+    right: -160px;
+    top: 35px;
+    background: #AAAAAA;
+    padding: 5px;
+    border-radius: 10px;
+	font-size: 0.8em;
+}
+#workerDocTypesTable th, #workerDocTypesTable td{
+	background:white;
+}
+#workerDocTypesTable1{
+	position: absolute;
+    right: -148px;
+    top: 285px;
+    background: #AAAAAA;
+    padding: 5px;
+    border-radius: 10px;
+	font-size: 0.8em;
+}
+#workerDocTypesTable1 th, #workerDocTypesTable1 td{
+	background:white;
+}
+
+#workerDocTypesTablea{
+	
+	font-size: 0.8em;
+}
+#workerDocTypesTablea th, #workerDocTypesTablea td{
+	background:white;
+}
+
+.biperContainer{
+	float: left;
+    margin-top: 100px;
+    position: static;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+.biperContainer table{
+	border: 1px solid black;
+}
+.biperContainer table td{
+	border: 1px solid black;
+}
+
+#PPalert, #WPalert, #NPalert{
+    color: #fff;
+    background-color: #DA362A;
+    border-radius: 5px;
+    width: 190px;
+	padding:3px;
+	color:yellow;
+	position: relative;
+    top: -53px;
+    right: -138px;
+    margin-bottom: 2px;
+	visibility: hidden;
+}
+#PPalert{
+	top: -27px;
+}
+#PPalert:before, #WPalert:before, #NPalert:before{
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 7px solid transparent;
+    border-right-color: #DA362A;
+    margin-left: -17px;
+    margin-top: 3px;
+}
+#PPalert.active, #WPalert.active, #NPalert.active, #FIREalert.active{
+	visibility: visible;
+}
+
+#FIREalert{
+    background-color: #ffd400;
+    border-radius: 5px;
+    width: 190px;
+	padding:3px;
+	color:red;
+	position: relative;
+    right: -138px;
+    margin-bottom: 2px;
+	text-align:center;
+	font-weight: bold;
+	visibility: hidden;
+    position: relative;
+    top: -70px;
+    height: 3.2em;
+    font-size: 1.1em;
+}
+
+
+.led-red {
+    margin: 0 auto;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+	float:left;
+	
+	background-color: #A00;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 0 0;
+}
+@keyframes blinkRed {
+    from { background-color: #A00; }
+    50% { 
+		background-color: #F00; 
+		box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;
+	}
+    to { background-color: #A00; }
+}
+
+.led-yellow {
+    margin: 0 auto;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+	display: inline-block;
+	
+	background-color: #AA0;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 0px 0;
+}
+
+@keyframes blinkYellow {
+    from { background-color: #AA0; }
+    50% { 
+		background-color: #FF0;
+		box-shadow: 
+		rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 12px; 
+	}
+    to {background-color: #AA0; }
+}
+
+
+
+
